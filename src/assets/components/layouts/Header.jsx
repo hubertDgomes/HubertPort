@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 left-0 z-40 w-full">
+      <div className="fixed top-0 right-0 left-0 z-50 w-full">
         <Container className={"bg-white/70 py-[10px] px-[10px] rounded-2xl"}>
           <div className="flex justify-between items-center">
             <div>
@@ -50,9 +50,22 @@ const Header = () => {
             </div>
           </div>
         </Container>
+      </div>
 
-        <AnimatePresence>
-          {isOpen && (
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* Dark overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-black z-40 md:hidden"
+              onClick={() => setIsOpen(false)}
+            />
+
+            {/* Mobile menu */}
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
@@ -81,9 +94,9 @@ const Header = () => {
                 </button>
               </div>
             </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+          </>
+        )}
+      </AnimatePresence>
     </>
   );
 };
