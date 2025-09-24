@@ -58,7 +58,7 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.4 }}
-              className="fixed top-0 right-0 h-screen w-[75%] bg-white shadow-lg md:hidden z-50"
+              className="fixed top-0 right-0 h-screen  bg-white shadow-lg md:hidden z-50"
             >
               <div className="flex flex-col items-center justify-center h-full gap-10 font-Ovo text-[22px]">
                 <a href="#home" onClick={() => setIsOpen(false)}>
