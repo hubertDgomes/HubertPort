@@ -19,14 +19,11 @@ const Footer = () => {
 
         <hr className="border-gray-300" />
 
-        {/* Bottom section */}
         <div className="mt-[10px] flex flex-col md:flex-row md:justify-between items-center text-center md:text-left gap-4">
-          {/* Left side text */}
           <p className="font-Outfit text-[14px] md:text-[18px] text-[#626262]">
             © 2025 Hubert Dhrubo Gomes. All rights reserved.
           </p>
 
-          {/* Right side links */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-x-[40px] md:gap-x-[70px] font-Outfit text-[14px] md:text-[18px] text-[#626262]">
             <p className="cursor-pointer hover:text-red-600 transition-colors">Terms of Services</p>
             <p className="cursor-pointer hover:text-red-600 transition-colors">Privacy Policy</p>
