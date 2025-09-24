@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 left-0 z-50 w-full">
+      <div className="fixed top-0 right-0 left-0 z-50">
         <Container className={"bg-white/70 py-[10px] px-[10px] rounded-2xl"}>
           <div className="flex justify-between items-center">
             <div>
@@ -36,7 +36,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className=" max-w-[300px] items-center gap-x-[20px] hidden lg:flex">
+            <div className=" max-w-[300px] items-center gap-x-[20px] hidden md:flex">
               <IoMoonOutline className="text-[28px]" />
               <button className="font-Outfit text-[18px] py-[10px] px-[20px] border-1 rounded-[100px]">
                 Connect
