@@ -7,7 +7,7 @@ const Box = ({ src, title, topic, onClick }) => {
   return (
     <>
       <div
-        className="py-[52px] px-[50px] border-1 border-[#D8D8D8] rounded-[8px] cursor-pointer hover:border-r-[4px] hover:border-b-[4px] transition-all duration-300"
+        className="py-[52px] px-[50px] border-1 border-[#D8D8D8] rounded-[8px] cursor-pointer hover:border-r-[4px] hover:border-b-[4px] transition-all duration-300 lg:w-[300px]"
         onClick={onClick}
       >
         <Images className={"w-[30px]"} src={src} />
@@ -54,7 +54,7 @@ const MyService = () => {
           <p className="font-Ovo text-[24px] text-[#242424]">What i offers</p>
           <h2 className="font-Ovo text-[60px] text-[#242424]">My services</h2>
         </div>
-        <div className="flex gap-x-[20px] flex-col lg:flex-row">
+        <div className="flex gap-x-[20px] flex-col lg:flex-row justify-center items-center">
           <Box
             src={src1}
             title={"Web design"}

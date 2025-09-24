@@ -15,7 +15,7 @@ const Box = ({ src, title, topic }) => {
   return (
     <>
       <div className="py-[32px] px-[20px] border-1 border-[#D8D8D8] rounded-[8px] w-[210px] cursor-pointer hover:border-r-[4px] hover:border-b-[4px] transition-all duration-300">
-        <Images className={"lg:w-[30px] w-[10px]"} src={src} />
+        <Images className={"lg:w-[30px] w-[20px]"} src={src} />
         <p className="font-Outfit text-[20px] font-medium mt-[10px]">{title}</p>
         <p className="font-Outfit text-[15px] text-[#797979] mt-[10px]">
           {topic}
@@ -76,7 +76,7 @@ const AboutMe = () => {
               transition={{
                 duration:0.4
               }}
-              className="lg:w-[797px] w-[400px] m-auto font-Ovo text-[20px] leading-[40px] text-center lg:text-left">
+              className="md:w-[797px] w-[400px] m-auto font-Ovo text-[20px] leading-[40px] text-center lg:text-left mt-[30px] lg:mt-0">
                 Hey, I’m Hubert — a Frontend Developer passionate about crafting
                 clean and responsive web apps. I enjoy turning ideas into
                 smooth, user-friendly interfaces with modern tools and tech.
@@ -147,8 +147,8 @@ const AboutMe = () => {
                 />
                 </motion.div>
               </div>
-              <p className="font-Ovo text-[20px] text-[#868686]">Tools i use</p>
-              <div className="flex gap-x-[15px]">
+              <p className="font-Ovo text-[20px] text-[#868686] text-center lg:text-left">Tools i use</p>
+              <div className="flex gap-x-[15px] justify-center items-center lg:justify-start">
                 <Images
                   className={
                     "w-[80px] p-3 border-1 rounded-2xl border-[#848484]"
