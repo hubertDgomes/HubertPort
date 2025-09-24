@@ -10,10 +10,10 @@ const Header = () => {
   return (
     <>
       <div className="fixed top-0 right-0 left-0 z-50 w-full">
-        <Container className={"bg-white/70 py-[10px] px-[10px] rounded-2xl"}>
+        <Container className={"bg-white/70 backdrop-blur-lg py-[10px] px-[20px] md:px-[10px] rounded-2xl my-2 mx-2"}>
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="font-Outfit font-semibold text-[32px] md:text-[45px]">
+              <h1 className="font-Outfit font-semibold text-[28px] md:text-[45px]">
                 Hubert <span className="text-red-700">.</span>
               </h1>
             </div>
@@ -42,10 +42,10 @@ const Header = () => {
                 Connect
               </button>
             </div>
-            <div className="md:hidden flex items-center gap-4">
-              <IoMoonOutline className="text-[26px]" />
-              <button onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+            <div className="md:hidden flex items-center gap-2">
+              <IoMoonOutline className="text-[22px]" />
+              <button onClick={() => setIsOpen(!isOpen)} className="p-2">
+                {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
               </button>
             </div>
           </div>
