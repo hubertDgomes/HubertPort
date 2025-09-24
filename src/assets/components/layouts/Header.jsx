@@ -17,7 +17,7 @@ const Header = () => {
                 Hubert <span className="text-red-700">.</span>
               </h1>
             </div>
-            <div className="max-w-[733px] py-6 px-8 rounded-[100px] bg-white hidden md:block">
+            <div className="lg:w-[733px] py-6 px-8 rounded-[100px] bg-white hidden md:block">
               <ul className="flex gap-x-[60px] font-Ovo text-[20px]">
                 <li>
                   <a href="#home">Home</a>

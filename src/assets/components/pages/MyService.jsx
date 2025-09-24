@@ -54,7 +54,7 @@ const MyService = () => {
           <p className="font-Ovo text-[24px] text-[#242424]">What i offers</p>
           <h2 className="font-Ovo text-[60px] text-[#242424]">My services</h2>
         </div>
-        <div className="flex gap-x-[20px]">
+        <div className="flex gap-x-[20px] flex-col lg:flex-row">
           <Box
             src={src1}
             title={"Web design"}

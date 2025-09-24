@@ -15,7 +15,7 @@ const Box = ({ src, title, topic }) => {
   return (
     <>
       <div className="py-[32px] px-[20px] border-1 border-[#D8D8D8] rounded-[8px] w-[210px] cursor-pointer hover:border-r-[4px] hover:border-b-[4px] transition-all duration-300">
-        <Images className={"w-[30px]"} src={src} />
+        <Images className={"lg:w-[30px] w-[10px]"} src={src} />
         <p className="font-Outfit text-[20px] font-medium mt-[10px]">{title}</p>
         <p className="font-Outfit text-[15px] text-[#797979] mt-[10px]">
           {topic}
@@ -59,8 +59,8 @@ const AboutMe = () => {
               About me
             </motion.h2>
           </motion.div>
-          <div className="flex justify-between items-center">
-            <div className="w-[400px]">
+          <div className="flex justify-between items-center flex-col lg:flex-row">
+            <div className="lg:w-[400px]">
               <Images className={"rounded-2xl"} src={me} />
             </div>
             <div div className="w-[797px]">
@@ -76,7 +76,7 @@ const AboutMe = () => {
               transition={{
                 duration:0.4
               }}
-              className="font-Ovo text-[20px] leading-[40px] ">
+              className="lg:w-[797px] w-[400px] m-auto font-Ovo text-[20px] leading-[40px] text-center lg:text-left">
                 Hey, I’m Hubert — a Frontend Developer passionate about crafting
                 clean and responsive web apps. I enjoy turning ideas into
                 smooth, user-friendly interfaces with modern tools and tech.
@@ -84,7 +84,7 @@ const AboutMe = () => {
                 the next level. For me, it’s all about blending creativity with
                 code to build experiences that stand out.
               </motion.p>
-              <div className="flex gap-x-[40px] py-[20px]">
+              <div className="flex gap-x-[40px] py-[20px] flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start">
                 <motion.div
                 initial={{
                   x:40,
