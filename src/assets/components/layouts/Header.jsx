@@ -36,7 +36,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="hidden items-center gap-x-[20px] md:flex">
+            <div className=" max-w-[300px] items-center gap-x-[20px] hidden lg:flex">
               <IoMoonOutline className="text-[28px]" />
               <button className="font-Outfit text-[18px] py-[10px] px-[20px] border-1 rounded-[100px]">
                 Connect
