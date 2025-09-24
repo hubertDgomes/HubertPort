@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <div className="fixed top-0 right-0 left-0 z-50">
-        <Container className={"bg-white/70 py-[10px] px-[10px] rounded-2xl"}>
+        <Container className={"bg-white/70 rounded-2xl"}>
           <div className="flex justify-between items-center">
             <div>
               <h1 className="font-Outfit font-semibold text-[32px] md:text-[45px]">
