@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-Outfit: "Outfit", sans-serif; 
+  --font-Ovo: "Ovo", serif; 
+}
+html {
+  scroll-behavior: smooth;
+}
