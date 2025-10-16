@@ -37,7 +37,7 @@ const AllPage = () => {
                 Connect with me
               </button>
               <button className="font-Outfit text-[18px] py-[10px] px-[20px] border-1 bg-white text-black rounded-[50px] cursor-pointer">
-                My resume
+               <a href="/src/assets/HubertDGomes.pdf" target="_blank"> My resume</a>
               </button>
             </div>
           </motion.div>
