@@ -105,7 +105,7 @@ const AboutMe = () => {
                 <Box
                   src={logo3}
                   title="Projects"
-                  topic="Built more than 2 projects"
+                  topic="Built more than 4 project's"
                 />
               </motion.div>
             </div>
