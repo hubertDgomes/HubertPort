@@ -34,7 +34,7 @@ const AllPage = () => {
             </p>
             <div className="flex justify-center gap-x-[30px]">
               <button className="font-Outfit text-[18px] py-[10px] px-[20px] border-1 bg-black text-white rounded-[50px] cursor-pointer">
-                Connect with me
+                <a href="#contact">Connect With me</a>
               </button>
               <button className="font-Outfit text-[18px] py-[10px] px-[20px] border-1 bg-white text-black rounded-[50px] cursor-pointer">
                <a href="/src/assets/HubertDGomes.pdf" target="_blank"> My resume</a>
