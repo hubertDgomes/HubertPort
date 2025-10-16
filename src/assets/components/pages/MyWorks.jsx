@@ -3,6 +3,8 @@ import Container from "../Container";
 import Images from "../Images";
 import logo1 from '/src/assets/GetOribi.jpg'
 import logo2 from '/src/assets/hankok.png'
+import logo3 from '/src/assets/uomo.png'
+import logo4 from '/src/assets/todo.png'
 import { FaCircleRight } from "react-icons/fa6";
 
 const Works = ({ src,title,title1,link }) => {
@@ -42,8 +44,8 @@ const MyWorks = () => {
         <div className="flex gap-x-[20px] mt-[50px] flex-col lg:flex-row justify-center items-center">
           <Works src={logo1} title={"Orebi"} title1={"E-Commerce Website"} link={"https://orebi-azure.vercel.app/"}/>
           <Works src={logo2} title={"Hancok"} title1={"Gaming Website"} link={"https://hancok-three.vercel.app/"}/>
-          <Works src={logo1} title={"Frontend project"} title1={"Web Design"} link={"https://orebi-azure.vercel.app/"}/>
-          <Works src={logo1} title={"Frontend project"} title1={"Web Design"} link={"https://orebi-azure.vercel.app/"}/>
+          <Works src={logo3} title={"UOMO"} title1={"E-Commerce Website"} link={"https://uomo-beta.vercel.app/"}/>
+          <Works src={logo4} title={"ToDo and Notes"} title1={"Task Management Tool"} link={"https://to-do-app-4qrs.vercel.app/"}/>
           
         </div>
       </Container>
