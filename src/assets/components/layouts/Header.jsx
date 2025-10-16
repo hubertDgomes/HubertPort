@@ -76,9 +76,7 @@ const Header = () => {
                 <a href="#contact" onClick={() => setIsOpen(false)}>
                   Contact
                 </a>
-                <button onClick={() => setIsOpen(false)} className="font-Outfit text-[18px] py-[10px] px-[20px] border-1 rounded-[100px]">
-                  <a href="#contact">Connect</a>
-                </button>
+                
               </div>
             </motion.div>
           )}
