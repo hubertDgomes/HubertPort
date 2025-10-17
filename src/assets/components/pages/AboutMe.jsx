@@ -10,6 +10,22 @@ import gif2 from "/src/assets/firebase.png";
 import gif3 from "/src/assets/figma.png";
 import gif4 from "/src/assets/git.png";
 import { motion } from "framer-motion";
+import LogoLoop from "/src/assets/components/layouts/LogoLoop";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
+import { RiFirebaseFill } from "react-icons/ri";
+
+
+
+
+
 
 const Box = ({ src, title, topic }) => {
   return (
@@ -24,6 +40,49 @@ const Box = ({ src, title, topic }) => {
 };
 
 const AboutMe = () => {
+  const techLogos = [
+    { node: <SiReact />, title: "React"},
+    {
+      node: <IoLogoJavascript />,
+      title: "JS",
+
+    },
+    {
+      node: <SiTailwindcss />,
+      title: "Tailwind CSS",
+    },
+    {
+      node: <FaHtml5 />,
+      title: "HTML",
+    },
+    {
+      node: <FaCss3Alt />,
+      title: "CSS",
+    },
+    {
+      node: <RiFirebaseFill />,
+      title: "Firebase",
+    },
+  ];
+
+  // Alternative with image sources
+  const imageLogos = [
+    {
+      src: "/logos/company1.png",
+      alt: "Company 1",
+      href: "https://company1.com",
+    },
+    {
+      src: "/logos/company2.png",
+      alt: "Company 2",
+      href: "https://company2.com",
+    },
+    {
+      src: "/logos/company3.png",
+      alt: "Company 3",
+      href: "https://company3.com",
+    },
+  ];
   return (
     <section id="about">
       <Container className="py-8 sm:py-12 md:py-16">
@@ -68,11 +127,11 @@ const AboutMe = () => {
               className="w-full font-Ovo text-base sm:text-lg md:text-xl leading-relaxed text-center lg:text-left mt-6 lg:mt-0"
             >
               Hey, I’m Hubert — a Frontend Developer passionate about crafting
-              clean and responsive web apps. I enjoy turning ideas into
-              smooth, user-friendly interfaces with modern tools and tech.
-              Always curious and eager to learn, I keep pushing my skills to
-              the next level. For me, it’s all about blending creativity with
-              code to build experiences that stand out.
+              clean and responsive web apps. I enjoy turning ideas into smooth,
+              user-friendly interfaces with modern tools and tech. Always
+              curious and eager to learn, I keep pushing my skills to the next
+              level. For me, it’s all about blending creativity with code to
+              build experiences that stand out.
             </motion.p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 py-6 justify-center items-center sm:items-start lg:justify-start">
               <motion.div
@@ -130,6 +189,50 @@ const AboutMe = () => {
                 src={gif4}
               />
             </div>
+          </div>
+        </div>
+
+        <div className="py-[40px] mt-[40px]">
+          <motion.div
+          initial={{ opacity: 0, y: -80, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 120,
+            damping: 15,
+            duration: 0.8,
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="text-center mb-[30px]"
+        >
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="font-Ovo text-lg sm:text-xl md:text-2xl tracking-wide text-gray-500"
+          >
+            Thing that I have Mastered At
+          </motion.p>
+        </motion.div>
+          <div
+            style={{
+              height: "200px",
+              position: "relative",
+              overflow: "hidden",
+            }}
+          >
+            <LogoLoop
+              logos={techLogos}
+              speed={100}
+              direction="left"
+              logoHeight={100}
+              gap={80}
+              pauseOnHover
+              scaleOnHover
+              fadeOut
+              fadeOutColor="#ffffff"
+              ariaLabel="Technology partners"
+            />
           </div>
         </div>
       </Container>
