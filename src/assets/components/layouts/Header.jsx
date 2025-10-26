@@ -37,13 +37,11 @@ const Header = () => {
               </ul>
             </div>
             <div className="items-center gap-x-[20px] hidden md:flex">
-              <IoMoonOutline className="text-[28px]" />
               <button className="font-Outfit text-[18px] py-[10px] px-[20px] border-1 rounded-[100px] cursor-pointer hover:bg-black hover:text-white transition-all duration-300">
                 <a href="#contact">Connect</a>
               </button>
             </div>
-            <div className="md:hidden flex items-center gap-4">
-              <IoMoonOutline className="text-[26px]" />
+            <div className="md:hidden flex items-center gap-4">    
               <button onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
               </button>
