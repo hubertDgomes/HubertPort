@@ -3,7 +3,7 @@ import Container from "../Container";
 import Images from "../Images";
 import man from "/src/assets/me.jpg";
 import { motion } from "motion/react"
-import pdf from '/src/assets/HubertDGomes.pdf'
+import pdf from '/src/assets/hubert-dhrubo-gomes.pdf'
 
 
 const AllPage = () => {
